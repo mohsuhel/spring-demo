@@ -2,10 +2,10 @@
 This is a sample Springboot Application, using different devops tools for to develop pipleine intergration !! Ex: Application,git,github,maven,jenkins,docker,dockerhub
 
 ## TASK DETAILS: 
-1.	Create a small web application to display “Sample Springboot Project”.
+1.	Create a small web application to display “Hello World”.
 2.	Push this application to a specific folder of the given GitHub repository.
 3.	Create a job in Jenkins and make a build this application.
-4.	On Every Commit, It has to Build a pipeline of the Application.
+4.	On Every Commit, It has to Build a pipeline with help of Webhook.
 5.	If needed Use Pipeline as a Code, for Building the entire pipeline.
 6.	Using Jenkins and Docker Plugin, create an Image of the developed web application.
 7.	Push the Image Finally to the Docker Hub and send the URL image of the Docker.
