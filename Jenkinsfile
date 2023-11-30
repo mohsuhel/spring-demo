@@ -29,14 +29,14 @@ node
     stage("Release and push dockerhub"){
         withCredentials([string(credentialsId: 'dockerHub', variable: 'dockerHub')]) {
     sh 'docker login -u mdsuh -p $dockerHub'
-    sh 'docker push mdsuh/springdemo'
+    sh 'docker push mdsuh/springdemo:1.0'
 } 
     }
     
      stage("exposing outside  ")
     {
         echo "Exposing Application the outside "
-        sh 'docker run -itd -p 8081:8081 mdsuh/springdemo'
+        sh 'docker run -itd -p 8081:8081 mdsuh/springdemo:1.0'
     
     }
 }
