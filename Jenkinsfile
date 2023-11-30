@@ -4,7 +4,7 @@ node
     stage("cloning the repositry")
     {
         echo "cloning the git repo started "
-        git 'https://github.com/mohsuhel/Guvi-Geek-Assignment.git'
+        git 'https://github.com/mohsuhel/spring-demo.git'
         echo "cloning done successfully"
     }
     
