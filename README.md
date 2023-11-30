@@ -79,7 +79,8 @@ Note : when you buuilding an image with help of pipeline
 
 ## Step -8 Verfying the output of Application
 
-![edited](https://github.com/mohsuhel/Spring-boot-Project/assets/127845338/df7b22aa-a742-4382-b58c-115d236a6953)
+![1](https://github.com/mohsuhel/spring-demo/assets/127845338/152b527a-6018-475c-95dd-59c80ac57c8f)
+
 
 
 
