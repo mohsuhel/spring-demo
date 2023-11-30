@@ -23,20 +23,20 @@ node
     
     stage("image building and containerizing ")
     {
-      sh 'sudo docker build -t mdsuh/spirngdemo .'        
+      sh 'docker build -t mdsuh/spirngdemo .'        
     }
     
     stage("Release and push dockerhub"){
         withCredentials([string(credentialsId: 'dockerHub', variable: 'dockerHub')]) {
-    sh 'sudo docker login -u mdsuh -p $dockerHub'
-    sh 'sudo docker push mdsuh/springdemo'
+    sh 'docker login -u mdsuh -p $dockerHub'
+    sh 'docker push mdsuh/springdemo'
 } 
     }
     
      stage("exposing outside  ")
     {
         echo "Exposing Application the outside "
-        sh 'sudo docker run -itd -p 8081:8081 mdsuh/springdemo'
+        sh 'docker run -itd -p 8081:8081 mdsuh/springdemo'
     
     }
 }
