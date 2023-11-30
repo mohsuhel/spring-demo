@@ -23,20 +23,20 @@ node
     
     stage("image building and containerizing ")
     {
-      sh 'docker build -t mdsuh/guvi-geek:1.0 .'        
+      sh 'docker build -t mdsuh/spirngdemo .'        
     }
     
     stage("Release and push dockerhub"){
         withCredentials([string(credentialsId: 'dockerHub', variable: 'dockerHub')]) {
     sh 'docker login -u mdsuh -p $dockerHub'
-    sh 'docker push mdsuh/guvi-geek:1.0'
+    sh 'docker push mdsuh/springdemo'
 } 
     }
     
      stage("exposing outside  ")
     {
         echo "Exposing Application the outside "
-        sh 'docker run -itd -p 8081:8081 mdsuh/guvi-geek:1.0'
+        sh 'docker run -itd -p 8081:8081 mdsuh/springdemo'
     
     }
 }
