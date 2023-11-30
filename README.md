@@ -74,6 +74,15 @@ Note : when you buuilding an image with help of pipeline
 1. Check the jenkins is added to the docker group( sudo usermod -aG docker jenkins)
 ![6](https://github.com/mohsuhel/Guvi-Geek-Assignment/assets/127845338/ccc81bd3-81b1-4700-b42a-9f6e465a7dfa)
 
+Step-7 : Github Weebhook implementation
+## weebok
+![2](https://github.com/mohsuhel/spring-demo/assets/127845338/5170ddfb-70e4-4c88-8cb5-e312a847b247)
+
+##configuration
+![3](https://github.com/mohsuhel/spring-demo/assets/127845338/bec22b5d-0a90-4b7e-989a-c8e32570008f)
+
+
+
 
 
 
