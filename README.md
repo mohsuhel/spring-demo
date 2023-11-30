@@ -1,4 +1,4 @@
-# Deploying Springboot Application
+# Deploying Springboot web Application
 This is a sample Springboot Application, using different devops tools for to develop pipleine intergration !! Ex: Application,git,github,maven,jenkins,docker,dockerhub
 
 ## TASK DETAILS: 
@@ -9,6 +9,7 @@ This is a sample Springboot Application, using different devops tools for to dev
 5.	If needed Use Pipeline as a Code, for Building the entire pipeline.
 6.	Using Jenkins and Docker Plugin, create an Image of the developed web application.
 7.	Push the Image Finally to the Docker Hub and send the URL image of the Docker.
+8.	Setting up the Prometheus server adding running application url to monitoring.
 
 
 ## Pre-requisite ##
@@ -68,7 +69,7 @@ Note : Give the Execution premission to the script (chmod +x filename.sh)
 
 
 
-Step-6 : Jenkins Setup  and pipeline output
+## Step-6 : Jenkins Setup  and pipeline output
 ## pipeline script is available in rep0
 Note : when you buuilding an image with help of pipeline 
 1. Check the jenkins is added to the docker group( sudo usermod -aG docker jenkins)
@@ -78,16 +79,15 @@ Step-7 : Github Weebhook implementation
 ## weebok
 ![2](https://github.com/mohsuhel/spring-demo/assets/127845338/5170ddfb-70e4-4c88-8cb5-e312a847b247)
 
-##configuration
+## configuration
 ![3](https://github.com/mohsuhel/spring-demo/assets/127845338/bec22b5d-0a90-4b7e-989a-c8e32570008f)
-
-
-
-
-
 
 ## Step -8 Verfying the output of Application
 
+## successfull pipleine job running 
+![4](https://github.com/mohsuhel/spring-demo/assets/127845338/95f78f62-c401-4ec6-abb5-b0bbb22f7e0b)
+
+## verfying 
 ![1](https://github.com/mohsuhel/spring-demo/assets/127845338/152b527a-6018-475c-95dd-59c80ac57c8f)
 
 
