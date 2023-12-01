@@ -20,13 +20,11 @@ This is a sample Springboot Application, using different devops tools for to dev
 
  Flow of the Task
  
-![Spring inti](https://github.com/mohsuhel/Guvi-Geek-Assignment/assets/127845338/09929dfa-b15d-4ba4-a5dc-c2e23fef09e1)
 
+![Spring inti](https://github.com/mohsuhel/spring-demo/assets/127845338/298219af-a7ba-4b88-9213-2d1eb833021b)
 
 
 ## Steps Invloved:
-![Spring inti](https://github.com/mohsuhel/spring-demo/assets/127845338/298219af-a7ba-4b88-9213-2d1eb833021b)
-
 
 
 ## Step-1: Create and download a Spring Boot web application with Spring initializr.
@@ -71,15 +69,18 @@ Here, Im writing the Shell script where i can install the above installation at 
 ### Script will available in Repo### 
 Note : Give the Execution premission to the script (chmod +x filename.sh)
 
-![5](https://github.com/mohsuhel/Guvi-Geek-Assignment/assets/127845338/67c09705-f120-465a-991d-9db0bce485d7)
+![5](https://github.com/mohsuhel/spring-demo/assets/127845338/9763b8a8-2a8c-4471-92a8-d7dcfb89677b)
+
 
 
 
 ## Step-6 : Jenkins Setup  and pipeline output
+![6](https://github.com/mohsuhel/spring-demo/assets/127845338/3c3576e7-6d1e-49e6-a320-d8b64be10693)
+
 ## pipeline script is available in rep0
 Note : when you buuilding an image with help of pipeline 
 1. Check the jenkins is added to the docker group( sudo usermod -aG docker jenkins)
-![6](https://github.com/mohsuhel/Guvi-Geek-Assignment/assets/127845338/ccc81bd3-81b1-4700-b42a-9f6e465a7dfa)
+![3](https://github.com/mohsuhel/spring-demo/assets/127845338/edf41bd4-7f4d-4eb4-a420-b9c06a41c44f)
 
 Step-7 : Github Weebhook implementation
 ## weebok
