@@ -25,17 +25,22 @@ This is a sample Springboot Application, using different devops tools for to dev
 
 
 ## Steps Invloved:
+![Spring inti](https://github.com/mohsuhel/spring-demo/assets/127845338/298219af-a7ba-4b88-9213-2d1eb833021b)
+
 
 
 ## Step-1: Create and download a Spring Boot web application with Spring initializr.
+![1](https://github.com/mohsuhel/spring-demo/assets/127845338/cf3d009f-e0f2-4298-ab5b-55b84c0b0afc)
 
 
-![1](https://github.com/mohsuhel/Guvi-Geek-Assignment/assets/127845338/9921ffec-c16a-4291-ba2e-4ce1d8a94c65)
+
 
 
 ## Step-2:Click on Generate CTRL. Project zip file will be downloaded.
 
-![2](https://github.com/mohsuhel/Guvi-Geek-Assignment/assets/127845338/facc7cf1-55f9-4f84-8633-7546d00c559e)
+
+![2](https://github.com/mohsuhel/spring-demo/assets/127845338/c7810a34-d689-4226-97f1-471cf34b65f5)
+
 
 
 
@@ -43,7 +48,8 @@ This is a sample Springboot Application, using different devops tools for to dev
 1.Extract the zip and import to eclipse(file —> import—-> Maven Proj existing project)
 2. create index.html and add the required content to showcase
 
-![3](https://github.com/mohsuhel/Guvi-Geek-Assignment/assets/127845338/a57cf290-1e95-4507-8339-ee52b163558f)
+![3](https://github.com/mohsuhel/spring-demo/assets/127845338/b34ae345-15d2-466f-b082-b6b8ab988677)
+
 
 Step-4 :
  1. Login into the Aws Console
