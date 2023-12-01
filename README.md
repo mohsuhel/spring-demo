@@ -90,6 +90,87 @@ Step-7 : Github Weebhook implementation
 ## verfying 
 ![1](https://github.com/mohsuhel/spring-demo/assets/127845338/152b527a-6018-475c-95dd-59c80ac57c8f)
 
+# prometheus setup 
+
+follow this steps 
+---------------------------------------------
+ sudo useradd \
+    --system \
+    --no-create-home \
+    --shell /bin/false prometheus
+---------------------------------------------
+wget https://github.com/prometheus/prometheus/releases/download/v2.47.1/prometheus-2.47.1.linux-amd64.tar.gz
+------------------------------------------------------------------------------------------------------------
+tar -xvf prometheus-2.47.1.linux-amd64.tar.gz
+------------------------------------------------
+sudo mkdir -p /data /etc/prometheus
+-------------------------------------------------
+cd prometheus-2.47.1.linux-amd64/
+---------------------------------------------------
+sudo mv prometheus promtool /usr/local/bin/
+-------------------------------------------------
+sudo mv consoles/ console_libraries/ /etc/prometheus/
+--------------------------------------------------------
+sudo mv prometheus.yml /etc/prometheus/prometheus.yml
+-----------------------------------------------------
+sudo chown -R prometheus:prometheus /etc/prometheus/ /data/
+-----------------------------------------------------------
+prometheus --version
+-------------------------------
+![5](https://github.com/mohsuhel/spring-demo/assets/127845338/0d317a1b-5efb-45ca-a2fd-03b0e6da8a79)
+
+------------------------------------------------------
+
+<public ip :9090>
+----------------------------------------
+
+![6](https://github.com/mohsuhel/spring-demo/assets/127845338/59477916-10c6-4dd8-842c-b14281e7b58f)
+
+
+
+# install the node exporter 
+------------------------------------
+wget https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+--------------------------------------
+tar -xvf node_exporter-1.6.1.linux-amd64.tar.gz
+---------------------------------------------------
+node_exporter --version
+--------------------------
+![7](https://github.com/mohsuhel/spring-demo/assets/127845338/82b0a236-26fb-4a77-8fe3-4fd4be5dc800)
+
+![8](https://github.com/mohsuhel/spring-demo/assets/127845338/d5ddd0d8-c5a5-416a-ac03-4f285dbcfa04)
+
+# install grafana
+----------------------------------------
+sudo apt-get install -y apt-transport-https software-properties-common wget
+---------------------------------------------------------------------------
+sudo mkdir -p /etc/apt/keyrings/
+wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+------------------------------------------------------------------------------------------------------------------
+echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+-------------------------------------------------------------------------------------------------------------------------------------------
+sudo systemctl start grafana-server
+-----------------------------------------------
+sudo systemctl status grafana-server
+--------------------------------------- 
+
+<pubic ip :3000>
+
+![9](https://github.com/mohsuhel/spring-demo/assets/127845338/cdacd711-da98-480a-a514-bec396ded518)
+
+username admin
+password admin
+
+![10](https://github.com/mohsuhel/spring-demo/assets/127845338/1e429ad6-4717-4694-b2ce-175ed90bae9b)
+
+
+# Grafana Dashboard
+![11](https://github.com/mohsuhel/spring-demo/assets/127845338/e6147e5f-cb76-434c-801c-73ccb28d7d68)
+
+
+
+
+
 
 
 
